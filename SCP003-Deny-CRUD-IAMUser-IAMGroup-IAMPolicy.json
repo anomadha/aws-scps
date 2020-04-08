@@ -1,0 +1,30 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "OrganizationWideDenials",
+            "Effect": "Deny",
+            "Action": [
+                "iam:CreateUser",
+                "iam:GetUser",
+                "iam:ListUsers",
+                "iam:TagUser",
+                "iam:UntagUser",
+                "iam:UpdateUser",
+                "iam:DeleteUser",
+                "iam:CreateGroup",
+                "iam:GetGroup",
+                "iam:UpdateGroup",
+                "iam:ListGroups",
+                "iam:DeleteGroup",
+                "iam:CreatePolicy",
+                "iam:CreatePolicyVersion",
+                "iam:DeletePolicyVersion",
+                "iam:DeletePolicy"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

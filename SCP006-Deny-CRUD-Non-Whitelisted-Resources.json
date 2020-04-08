@@ -1,0 +1,26 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "sid": "WhiteListResourcesandServices",
+            "Effect": "Deny",
+            "NotAction": [
+                "cloud9:*",
+                "kms:GenerateDataKey",
+                "kms:Decrypt",
+                "ec2:DescribeVpcs",
+                "cloudformation:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

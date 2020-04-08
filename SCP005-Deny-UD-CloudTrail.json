@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "sid": "Prevent users from disabling cloudtrail",
+            "Effect": "Deny",
+            "Action": [
+                "cloudtrail:StopLogging"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DenyResourceCreationwithoutTags",
+            "Effect": "Deny",
+            "Action": [
+                "iam:CreateRole"
+            ],
+            "Resource": [
+                "*"
+            ],
+            "Condition": {
+                "Null": {
+                    "aws:RequestTag/CreatedBy": "true"
+                }
+            }
+        }
+    ]
+}
